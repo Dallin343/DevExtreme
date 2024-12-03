@@ -1,6 +1,6 @@
 {
   "name": "devextreme-react-storybook",
-  "version": "24.2.2",
+  "version": "24.2.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "devextreme": "workspace:~",
-    "devextreme-react": "workspace:~",
+    "devextreme": "~24.2.3",
+    "devextreme-react": "~24.2.3",
     "inferno": "^7.4.9"
   },
   "devDependencies": {
