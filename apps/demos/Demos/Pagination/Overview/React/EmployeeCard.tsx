@@ -15,6 +15,7 @@ const EmployeeCard = ({ employee }: EmployeeCardProps) => {
           alt={employee.FullName}
         />
       </div>
+      
       <div className="employees__info">
         <div className="employees__info-row">
           <span className="employees__info-label">Full Name:</span>

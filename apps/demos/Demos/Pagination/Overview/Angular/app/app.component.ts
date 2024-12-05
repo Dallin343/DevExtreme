@@ -37,6 +37,7 @@ export class AppComponent {
   pageIndex = 1;
   
   pageSize = 4;
+  
 
   onPageIndexChange(val) {
     this.pageIndex = val;
