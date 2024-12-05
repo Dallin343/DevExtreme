@@ -1,14 +1,21 @@
 <template>
-  <div class="employees" :class="{ 
-    'employees--forth': pageSize === 4,
-    'employees--six': pageSize === 6,
-   }">
-    <div class="employees__card" v-for="employee in pageEmployees">
+  <div
+    class="employees"
+    :class="{
+      'employees--forth': pageSize === 4,
+      'employees--six': pageSize === 6,
+    }"
+  >
+    <div
+      class="employees__card"
+      v-for="employee in pageEmployees"
+    >
       <div class="employees__img-wrapper">
-        <img class="employees__img"
-         :src="employee.Picture" 
-         :alt="employee.FullName" 
-        />
+        <img
+          class="employees__img"
+          :src="employee.Picture"
+          :alt="employee.FullName"
+        >
       </div>
       <div class="employees__info">
         <div class="employees__info-row">
@@ -37,15 +44,12 @@
   />
 </template>
 
-
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import DxPagination from 'devextreme-vue/pagination';
 import { employees } from './data.ts';
 
-const getPageEmployees = (pageIndex, pageSize) => {
-  return employees.slice((pageIndex - 1) * pageSize, pageIndex * pageSize);
-}
+const getPageEmployees = (pageIndex, pageSize) => employees.slice((pageIndex - 1) * pageSize, pageIndex * pageSize);
 
 const pageSizes = [4, 6];
 const showInfo = true;
