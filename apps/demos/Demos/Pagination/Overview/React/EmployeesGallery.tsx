@@ -12,6 +12,7 @@ const EmployeeGallery = ({ employees, pageSize, pageIndex }: EmployeeGalleryProp
   const cardsNumber = pageSize === 4 ? 'employees--forth' : 'employees--six';
   const pageEmployees = employees.slice((pageIndex - 1) * pageSize, pageIndex * pageSize);
 
+  
   return (
     <div className={`employees ${cardsNumber}`}>
       {pageEmployees.map((employee) => (

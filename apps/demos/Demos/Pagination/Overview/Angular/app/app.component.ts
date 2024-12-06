@@ -44,6 +44,7 @@ export class AppComponent {
     this.setPageEmployees();
   }
 
+  
   onPageSizeChange(val) {
     this.pageSize = val;
     this.setPageEmployees();

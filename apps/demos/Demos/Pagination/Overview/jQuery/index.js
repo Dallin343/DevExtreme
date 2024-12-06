@@ -64,7 +64,7 @@ $(() => {
     
       return employeeInfo;
     };
-    
+
 
     const createEmployeeCard = (employee) => {
       const cardEl = $('<div>').addClass('employees__card');
@@ -77,6 +77,7 @@ $(() => {
     
       return cardEl;
     };
+    
     
     const renderEmployeeGallery = (pageSize, pageIndex) => {
       const $employeesContainer = $('#employees');
