@@ -38,13 +38,11 @@ export class AppComponent {
   
   pageSize = 4;
   
-
   onPageIndexChange(val) {
     this.pageIndex = val;
     this.setPageEmployees();
   }
 
-  
   onPageSizeChange(val) {
     this.pageSize = val;
     this.setPageEmployees();

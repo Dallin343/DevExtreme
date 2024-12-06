@@ -14,7 +14,6 @@ const App = () => {
         pageSize={pageSize}
         pageIndex={pageIndex}
       />
-      
       <Pagination
         showInfo
         showNavigationButtons

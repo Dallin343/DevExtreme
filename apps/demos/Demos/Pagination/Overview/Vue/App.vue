@@ -33,8 +33,6 @@
       </div>
     </div>
   </div>
-
-  
   <DxPagination
     :show-info="showInfo"
     :show-navigation-buttons="showPageSizeSelector"
