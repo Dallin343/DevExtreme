@@ -73,7 +73,6 @@ $(() => {
     
       cardEl.append(imageWrapper);
       cardEl.append(employeeInfo);
-    
       return cardEl;
     };
     

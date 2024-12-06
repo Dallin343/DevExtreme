@@ -74,6 +74,7 @@ const loop = ref(false);
 const animationEnabled = ref(true);
 const companies = multiViewItems;
 </script>
+
 <style>
 #multiview {
   margin-top: 25px;

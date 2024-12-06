@@ -56,6 +56,7 @@ const showPageSizeSelector = true;
 const pageIndex = ref(1);
 const pageSize = ref(4);
 const itemCount = employees.length;
+
 const pageEmployees = computed(() => getPageEmployees(pageIndex.value, pageSize.value));
 </script>
 
